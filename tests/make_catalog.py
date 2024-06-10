@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import re
 import sys
@@ -45,7 +45,7 @@ def search_files(args=sys.argv[1:]):
     for fname in args:
         try:
             f.search_file(fname)
-        except IOError, msg:
+        except IOError as msg:
             sys.stderr.write("%s: %s\n" % (fname, msg))
             sys.exit(1)
     return f.found

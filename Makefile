@@ -192,7 +192,7 @@ lib-runtests = -lrt
 
 # generate list of tests automatically
 test_catalog.inc: $(filter-out tests/runner.c,${src-runtests})
-	@[ ! -z "$$(which python)" ] || \
+	@[ ! -z "$$(which python3)" ] || \
 		(echo '  [!!!] Error: Need to have python installed in PATH.'; exit 1)
 	@tests/make_catalog.py $+ > $@ || \
 		(rm $@; echo "  [!!!] Error: Could not generate test catalogue."; exit 1)
