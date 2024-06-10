@@ -12,7 +12,7 @@ host-arch := $(shell uname -m | \
 ARCH ?= ${host-arch}
 
 # YAT_KERNEL -- where to find the yat kernel?
-YAT_KERNEL ?= ../yat-rt
+YAT_KERNEL ?= ../yat_sched
 
 
 # ##############################################################################
