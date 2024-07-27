@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# availsched: show all plugin.
+
+cat /proc/yat/plugins/loaded
